@@ -1,0 +1,326 @@
+html, body {
+  background-color: grey;
+	background-image: url(images/background.jpg);
+  background-size: 100%;
+  background-repeat: repeat; 
+  position: relative;
+  font-family: "Impact Condensed";
+  margin: auto;
+  }
+
+  /* width */
+::-webkit-scrollbar {
+  background: #000000;
+  width: 15px;
+  border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+  border-radius: 5px;
+}
+
+
+
+
+  .banner {
+    border: 2px solid black;
+    border-radius: 2px;
+  }
+
+
+/* The navigation menu */
+.navbar {
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  text-decoration: none;
+  color: white;
+  text-align: left;
+  padding: 16px 16px;
+}
+
+/* Style the search box inside the navigation bar */
+.navbar input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  font-size: 2vh;
+  margin: 1%;
+}
+
+.srcbut  input[type=submit] {
+   float: right;
+  padding: 6px;
+  border: none;
+  margin: 1%;
+  font-size: 2vh;
+  cursor: pointer;
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+/* Subnav button */
+.subnav .subnavbtn { 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 16px 16px;
+  background: rgba(0, 0, 0, 0.0);
+  margin: 0;
+  font-family: "Impact Condensed";
+
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+  border: 3px solid black;
+  border-radius: 3px;
+  transition: 0.6s ease;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 10;
+  background-color: red;
+  width: auto;
+  z-index: 1;
+  border: 3px solid black;
+  border-radius: 3px;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+ 
+.info {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  background: rgba(0,0,0,0.8);
+}
+
+.intro {
+  max-width: 1300px;
+  position: relative;
+  margin: auto;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.stuff {
+  background: rgba(0,0,0,0.8);
+  list-style: none;
+  border: 2px solid black;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  float: left;
+  overflow: hidden;
+}
+
+.flex-container .box {
+  width: 50%;
+  margin: auto;
+  margin-left: 10px;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+}
+
+.flex-container2 {
+  display: flex;
+  flex-wrap: nowrap;
+  float: left;
+  overflow: hidden;
+}
+
+.flex-container2 .box {
+  width: 50%;
+  margin: auto;
+  margin-left: 10px;
+  text-align: center;
+  overflow: hidden;
+  color: white;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  padding: 0;
+  overflow: hidden; 
+  color: white;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+
+}
+ 
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1300px;
+  position: relative;
+  margin: auto;
+  border-radius: 3px;
+  border: 3px solid black;
+  background-color: black;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #ffffff;
+  font-size: 2.5vw;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #000000;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #ff0000;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  .footer {
+    font-size: 20px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .footer {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 701px) {
+    .navbar, .subnavbtn, .box, .info {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+     .navbar, .subnavbtn , .box, .info {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 851px) {
+     .box {
+    font-size: 23px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+     .box {
+    font-size: 12px;
+  }
+}

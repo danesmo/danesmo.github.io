@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>American Manufacturing Solutions</title>
+	<link rel="stylesheet" type="text/css" href="home.css">
+  <meta charset="UTF-8">
+  <meta name="keywords" content="ams,American,Manufacturing,Solutions,Milling,turning,engineering,contractor,machine,machinist,automotive,die,repair,fab,fabrication,indiana">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+	<div>
+ 		<image class="banner" src="images\banner.png" width="100%"></image>
+	</div>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">About </button>
+    <div class="subnav-content">
+      <a href="company.html">Company</a>
+      <a href="team.html">Team</a>
+      <a href="cap.html">Capabilities</a>
+    </div>
+  </div>
+  <div class="subnav">
+    <button class="subnavbtn">Services</button>
+    <div class="subnav-content">
+      <a href="eng.html">Engineering</a>
+      <a href="pm.html">Precision Machining</a>
+      <a href="fab.html">Fabrication</a>
+    </div>
+  </div>  
+    <div>
+    	<a href="contact.html">Contact</a>
+      <a href="career.html">Career</a>
+      <a href="loc.html">Location</a>
+    </div>
+    <div>
+      <a href="https://www.facebook.com/AMSolutions/" target="_blank">
+        <img src="images\facebook.png" height="25" width="25" align="right">
+      </a>
+    </div>
+      <div class="search">
+        <form method="GET" action="http://www.google.com/search" target="_blank">
+          <input type="text" name="q" placeholder="Search.." autocomplete="on">
+          <div class="srcbut">
+            <input type="submit" value="Google">
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <br>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with caption text -->
+  <div class="mySlides fade">
+    <img src="images\mill.png" style="width:100%">
+    <div class="text">Expertise in 2 and 3 axis milling operations.</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images\lathe.png" style="width:100%">
+    <div class="text">Experience with many different tool steels. </div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images\mill2.png" style="width:100%">
+    <div class="text">No job too small.</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images\wire.png" style="width:100%">
+    <div class="text">4 Axis Wire EDM capabilities.</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center; padding-bottom: 10px;">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+<script>
+	var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<br>
+</body>
+<footer class="footer">
+     &copy; 2020 American Manufacturing Solutions. All Rights Reserved.
+</footer>
+</html>
